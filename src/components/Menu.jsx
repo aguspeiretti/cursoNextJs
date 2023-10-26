@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import MyAccordionMenu from "./MyAccordionMenu";
+import Link from "next/link";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(null);
@@ -30,23 +32,34 @@ const Menu = () => {
             >
               Colegios
             </div>
+
             {menuOpen === "Colegios" && (
               <ul className="sub-menu absolute  left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal">
-                <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
-                  Jockey Club
-                </li>
-                <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
-                  Niños Argentinos
-                </li>
-                <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
-                  Monjas Azules
-                </li>
-                <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
-                  Victorino
-                </li>
-                <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
-                  Be Happy
-                </li>
+                <Link href={"/colegios/jockey"}>
+                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                    Jockey Club
+                  </li>
+                </Link>
+                <Link href={"/colegios/argentinos"}>
+                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                    Niños Argentinos
+                  </li>
+                </Link>
+                <Link href={"/colegios/monjas"}>
+                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                    Monjas Azules
+                  </li>
+                </Link>
+                <Link href={"/colegios/victorino"}>
+                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                    Victorino
+                  </li>
+                </Link>
+                <Link href={"/colegios/behappy"}>
+                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                    Be Happy
+                  </li>
+                </Link>
               </ul>
             )}
           </li>
@@ -57,11 +70,14 @@ const Menu = () => {
             >
               Empresas
             </div>
+
             {menuOpen === "Empresas" && (
               <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal">
-                <li className="py-1  hover:bg-gray-200 cursor-pointer ">
-                  Productos
-                </li>
+                <Link href={"/empresas/productos"}>
+                  <li className="py-1  hover:bg-gray-200 cursor-pointer ">
+                    Productos
+                  </li>
+                </Link>
               </ul>
             )}
           </li>
@@ -74,15 +90,21 @@ const Menu = () => {
             </div>
             {menuOpen === "Preguntas frecuentes" && (
               <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg  text-black w-44  font-normal">
-                <li className="py-1  hover:bg-gray-200 cursor-pointer">
-                  Lista de precios
-                </li>
-                <li className="py-1  hover:bg-gray-200 cursor-pointer">
-                  Envios
-                </li>
-                <li className="py-1  hover:bg-gray-200 cursor-pointer">
-                  Formas de pago
-                </li>
+                <Link href={"/preguntas/listas"}>
+                  <li className="py-1  hover:bg-gray-200 cursor-pointer">
+                    Lista de precios
+                  </li>
+                </Link>
+                <Link href={"/preguntas/envios"}>
+                  <li className="py-1  hover:bg-gray-200 cursor-pointer">
+                    Envios
+                  </li>
+                </Link>
+                <Link href={"/preguntas/pagos"}>
+                  <li className="py-1  hover:bg-gray-200 cursor-pointer">
+                    Formas de pago
+                  </li>
+                </Link>
               </ul>
             )}
           </li>
@@ -96,8 +118,10 @@ const Menu = () => {
           ></i>
         </div>
         <div
-          className={`menu-abierto absolute ${condicional} left-0 w-full h-full bg-black`}
-        ></div>
+          className={`menu-abierto absolute ${condicional} left-0 w-full h-full bg-zinc-900 `}
+        >
+          <MyAccordionMenu />
+        </div>
       </div>
     </div>
   );
