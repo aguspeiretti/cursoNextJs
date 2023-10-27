@@ -40,7 +40,7 @@ const Menu = () => {
                     Jockey Club
                   </li>
                 </Link>
-                <Link href={"/colegios/argentinos"}>
+                <Link href={"/colegios/ninos-argentinos"}>
                   <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
                     Niños Argentinos
                   </li>
@@ -90,7 +90,7 @@ const Menu = () => {
             </div>
             {menuOpen === "Preguntas frecuentes" && (
               <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg  text-black w-44  font-normal">
-                <Link href={"/preguntas/listas"}>
+                <Link href={"/preguntas/lista-de-precios"}>
                   <li className="py-1  hover:bg-gray-200 cursor-pointer">
                     Lista de precios
                   </li>
@@ -110,15 +110,15 @@ const Menu = () => {
           </li>
         </ul>
       </div>
-      <div className="flex items-center md:hidden">
-        <div className=" text-xl">
+      <div className="flex items-center ">
+        <div className=" text-xl md:hidden">
           <i
             onClick={() => toggleRmenu()}
-            className="fa-solid fa-bars pr-4 cursor-pointer "
+            className="fa-solid fa-bars pr-4 cursor-pointer  font-bold  "
           ></i>
         </div>
         <div
-          className={`menu-abierto absolute ${condicional} left-0 w-full h-full bg-zinc-900 `}
+          className={`menu-abierto absolute ${condicional} left-0 w-full h-[calc(100vh-3.5rem)] bg-zinc-900 `}
         >
           <MyAccordionMenu />
         </div>

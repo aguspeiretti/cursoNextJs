@@ -3,8 +3,6 @@ import "./globals.css";
 import { Head } from "next/head";
 import Nav from "@/components/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
   title: "Akumal Uniformes",
   description: "tienda de uniformes",
@@ -20,9 +18,11 @@ export default function RootLayout({ children }) {
           crossorigin="anonymous"
         ></script>
       </head>
-      <body className={inter.className}>
+      <body>
         <Nav />
-        {children}
+        <div className="h-[calc(100vh-3.5rem)] overflow-y-auto z-0">
+          {children}
+        </div>
       </body>
     </html>
   );

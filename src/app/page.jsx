@@ -1,5 +1,7 @@
-import Nav from "@/src/components/Nav";
-
 export default function Home() {
-  return <></>;
+  return (
+    <div className="bg-red-500 w-full h-full">
+      <p>hola</p>
+    </div>
+  );
 }
