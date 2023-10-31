@@ -15,6 +15,10 @@ const Menu = () => {
     }
   };
 
+  const closeMenu = () => {
+    setMenuOpen(null);
+  };
+
   const toggleRmenu = () => {
     setRmenu(!rmenu);
     console.log(rmenu);
@@ -35,28 +39,51 @@ const Menu = () => {
 
             {menuOpen === "Colegios" && (
               <ul className="sub-menu absolute  left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal">
-                <Link href={"/colegios/jockey"}>
-                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                <Link href={"/colegios/Todos"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1 transition hover:bg-gray-200 cursor-pointer"
+                  >
+                    Todos
+                  </li>
+                </Link>
+                <Link href={"/colegios/Jockey"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1 transition hover:bg-gray-200 cursor-pointer"
+                  >
                     Jockey Club
                   </li>
                 </Link>
-                <Link href={"/colegios/ninos-argentinos"}>
-                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                <Link href={"/colegios/Ninos-argentinos"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1 transition hover:bg-gray-200 cursor-pointer"
+                  >
                     Niños Argentinos
                   </li>
                 </Link>
-                <Link href={"/colegios/monjas"}>
-                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                <Link href={"/colegios/Monjas-azules"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1 transition hover:bg-gray-200 cursor-pointer"
+                  >
                     Monjas Azules
                   </li>
                 </Link>
-                <Link href={"/colegios/victorino"}>
-                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                <Link href={"/colegios/Victorino"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1 transition hover:bg-gray-200 cursor-pointer"
+                  >
                     Victorino
                   </li>
                 </Link>
-                <Link href={"/colegios/behappy"}>
-                  <li className="py-1 transition hover:bg-gray-200 cursor-pointer">
+                <Link href={"/colegios/Be-happy"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1 transition hover:bg-gray-200 cursor-pointer"
+                  >
                     Be Happy
                   </li>
                 </Link>
@@ -74,7 +101,10 @@ const Menu = () => {
             {menuOpen === "Empresas" && (
               <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal">
                 <Link href={"/empresas/productos"}>
-                  <li className="py-1  hover:bg-gray-200 cursor-pointer ">
+                  <li
+                    onClick={closeMenu}
+                    className="py-1  hover:bg-gray-200 cursor-pointer "
+                  >
                     Productos
                   </li>
                 </Link>
@@ -91,17 +121,26 @@ const Menu = () => {
             {menuOpen === "Preguntas frecuentes" && (
               <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg  text-black w-44  font-normal">
                 <Link href={"/preguntas/lista-de-precios"}>
-                  <li className="py-1  hover:bg-gray-200 cursor-pointer">
+                  <li
+                    onClick={closeMenu}
+                    className="py-1  hover:bg-gray-200 cursor-pointer"
+                  >
                     Lista de precios
                   </li>
                 </Link>
                 <Link href={"/preguntas/envios"}>
-                  <li className="py-1  hover:bg-gray-200 cursor-pointer">
+                  <li
+                    onClick={closeMenu}
+                    className="py-1  hover:bg-gray-200 cursor-pointer"
+                  >
                     Envios
                   </li>
                 </Link>
                 <Link href={"/preguntas/pagos"}>
-                  <li className="py-1  hover:bg-gray-200 cursor-pointer">
+                  <li
+                    onClick={closeMenu}
+                    className="py-1  hover:bg-gray-200 cursor-pointer"
+                  >
                     Formas de pago
                   </li>
                 </Link>
