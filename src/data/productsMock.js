@@ -3,7 +3,7 @@ export const products = [
     title: "Remera manga corta primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-corta-primaria",
     image:
@@ -14,7 +14,7 @@ export const products = [
     title: "Remera manga larga primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-larga-primaria",
     image:
@@ -25,7 +25,7 @@ export const products = [
     title: "Campera friza primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-friza-primaria",
     image:
@@ -36,7 +36,7 @@ export const products = [
     title: "Pantalon friza primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-friza-primaria",
     image:
@@ -47,7 +47,7 @@ export const products = [
     title: "Short primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "short-primaria",
     image:
@@ -58,7 +58,7 @@ export const products = [
     title: "Pollera pantalon primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pollera-pantalon-primaria",
     image:
@@ -69,7 +69,7 @@ export const products = [
     title: "Chaleco primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "chaleco-primaria",
     image:
@@ -80,7 +80,7 @@ export const products = [
     title: "Campera polar",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-polar",
     image:
@@ -92,7 +92,7 @@ export const products = [
     title: "Remera manga corta",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-corta",
     image:
@@ -103,7 +103,7 @@ export const products = [
     title: "Remera manga larga",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-larga",
     image:
@@ -114,7 +114,7 @@ export const products = [
     title: "Campera deportivo",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-deportivo",
     image:
@@ -125,7 +125,7 @@ export const products = [
     title: "Pantalon deportivo",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-deportivo",
     image:
@@ -136,7 +136,7 @@ export const products = [
     title: "Pantalon rustico",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-rustico",
     image:
@@ -147,7 +147,7 @@ export const products = [
     title: "Short",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "short",
     image:
@@ -158,7 +158,7 @@ export const products = [
     title: "Pollera pantalon",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pollera-pantalon",
     image:
@@ -169,7 +169,7 @@ export const products = [
     title: "Chaleco",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "chaleco",
     image:
@@ -180,7 +180,7 @@ export const products = [
     title: "Pintor",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pintor",
     image:
@@ -191,7 +191,7 @@ export const products = [
     title: "Mochila",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "mochila",
     image:
@@ -203,7 +203,7 @@ export const products = [
     title: "Remera manga corta",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-corta",
     image:
@@ -214,7 +214,7 @@ export const products = [
     title: "Remera manga larga",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-larga",
     image:
@@ -225,7 +225,7 @@ export const products = [
     title: "Campera deportivo",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-deportivo",
     image:
@@ -236,7 +236,7 @@ export const products = [
     title: "Pantalon deportivo",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-deportivo",
     image:
@@ -247,7 +247,7 @@ export const products = [
     title: "Short",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "short",
     image:
@@ -258,7 +258,7 @@ export const products = [
     title: "Pollera pantalon",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pollera-pantalon",
     image:
@@ -269,7 +269,7 @@ export const products = [
     title: "Pintor",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pintor",
     image:
@@ -280,7 +280,7 @@ export const products = [
     title: "Mochila",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "mochila",
     image:
@@ -292,7 +292,7 @@ export const products = [
     title: "Remera manga corta",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-corta",
     image:
@@ -303,7 +303,7 @@ export const products = [
     title: "Remera manga larga",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-larga",
     image:
@@ -314,7 +314,7 @@ export const products = [
     title: "Chomba manga corta",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "chomba-manga-corta",
     image:
@@ -325,7 +325,7 @@ export const products = [
     title: "Chomba manga larga",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "chomba-manga-larga",
     image:
@@ -336,7 +336,7 @@ export const products = [
     title: "Campera friza",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-friza",
     image:
@@ -347,7 +347,7 @@ export const products = [
     title: "Buzo friza azul",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "buzo-friza-azul",
     image:
@@ -358,7 +358,7 @@ export const products = [
     title: "Buzo friza verde",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "buzo-friza-verde",
     image:
@@ -369,7 +369,7 @@ export const products = [
     title: "Pantalon friza azul",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-friza-azul",
     image:
@@ -380,7 +380,7 @@ export const products = [
     title: "Pantalon gabardina",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-gabardina",
     image:
@@ -391,7 +391,7 @@ export const products = [
     title: "Short primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "short-primaria",
     image:
@@ -402,7 +402,7 @@ export const products = [
     title: "Pollera pantalon",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pollera-pantalon",
     image:
@@ -413,7 +413,7 @@ export const products = [
     title: "Campera polar",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-polar",
     image:
@@ -424,7 +424,7 @@ export const products = [
     title: "Pintor",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pintor",
     image:
@@ -435,7 +435,7 @@ export const products = [
     title: "Mochila",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "mochila",
     image:
@@ -446,7 +446,7 @@ export const products = [
     title: "Remera manga corta",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-corta",
     image:
@@ -457,7 +457,7 @@ export const products = [
     title: "Remera manga larga",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "remera-manga-larga",
     image:
@@ -468,7 +468,7 @@ export const products = [
     title: "Chomba manga corta",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "chomba-manga-corta",
     image:
@@ -479,7 +479,7 @@ export const products = [
     title: "Campera friza",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "campera-friza",
     image:
@@ -490,7 +490,7 @@ export const products = [
     title: "Buzo friza azul",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "buzo-friza-azul",
     image:
@@ -501,7 +501,7 @@ export const products = [
     title: "Pantalon friza azul",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pantalon-friza-azul",
     image:
@@ -512,7 +512,7 @@ export const products = [
     title: "Short primaria",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "short-primaria",
     image:
@@ -523,7 +523,7 @@ export const products = [
     title: "Pollera pantalon",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pollera-pantalon",
     image:
@@ -534,7 +534,7 @@ export const products = [
     title: "Pintor",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    inStock: 0,
+    inStock: 10,
     price: 12500,
     slug: "pintor",
     image:

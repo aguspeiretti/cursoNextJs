@@ -1,5 +1,7 @@
 import { products } from "@/data/productsMock";
 import { useParams } from "next/navigation";
+import Counter from "../Counter";
+import QtySelector from "./QtySelector";
 
 const ProductDetail = ({ slug }) => {
   const product = products.find((item) => item.slug === slug);
@@ -15,11 +17,9 @@ const ProductDetail = ({ slug }) => {
           <h3 className="font-semibold text-xl pb-6">
             Precio: ${product.price}
           </h3>
-          <p>contador</p>
-          <p>selector talles</p>
-          <button className="w-2/6 h-8 rounded-xl bg-white text-zinc-800">
-            Agregar al carrito
-          </button>
+          
+          <QtySelector item={product}/>
+       
         </div>
         <div className="w-full h-1/3 px-8 ">
           <h1 className="text-lg font-semibold pt-2 pb-8">Descripcion</h1>
