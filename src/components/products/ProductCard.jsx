@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ProductCard = ({ item }) => {
   return (
-    <div className="w-72 h-80 bg-white mr-2 mb-2 flex  flex-col items-center justify-center">
+    <div className="w-72 h-80 bg-gray-200 mr-2 mb-2 flex  flex-col items-center justify-center">
       <img className="h-1/2" src={item.image} alt="productImage" />
       <h3>{item.title}</h3>
       <Link href={`/colegios/detail/${item.slug}`}>

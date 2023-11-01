@@ -1,15 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import Counter from "../Counter";
-import Size from "./Size";
+import Size from "../Size";
 
 const QtySelector = ({ item }) => {
+  console.log(item);
+
   const [qty, setQty] = useState(1);
   const [size, setSize] = useState("");
 
-  const handleAdd = () => {
-    console.log(...item, size, qty);
-  };
+  const handleAdd = () => {};
 
   return (
     <div>
@@ -17,9 +17,14 @@ const QtySelector = ({ item }) => {
         <Counter max={item.inStock} quantity={qty} setCounter={setQty} />
       </div>
       <div className="mb-8">
-        <Size />
+        <Size size={size} setSize={setSize} />
       </div>
-      <button className="w-2/6 h-8 rounded-xl bg-orange-500 text-white">
+      <button
+        onClick={() => {
+          handleAdd();
+        }}
+        className="w-2/6 h-8 rounded-xl bg-orange-500 text-white"
+      >
         Agregar al carrito
       </button>
     </div>

@@ -32,13 +32,16 @@ const Menu = () => {
           <li className="relative group m-4">
             <div
               className="cursor-pointer"
-              onClick={() => toggleMenu("Colegios")}
+              onMouseOver={() => toggleMenu("Colegios")}
             >
               Colegios
             </div>
 
             {menuOpen === "Colegios" && (
-              <ul className="sub-menu absolute  left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal">
+              <ul
+                onMouseLeave={closeMenu}
+                className="sub-menu absolute  left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal"
+              >
                 <Link href={"/colegios/Todos"}>
                   <li
                     onClick={closeMenu}
@@ -93,13 +96,16 @@ const Menu = () => {
           <li className="relative group m-4">
             <div
               className="cursor-pointer"
-              onClick={() => toggleMenu("Empresas")}
+              onMouseOver={() => toggleMenu("Empresas")}
             >
               Empresas
             </div>
 
             {menuOpen === "Empresas" && (
-              <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal">
+              <ul
+                onMouseLeave={closeMenu}
+                className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal"
+              >
                 <Link href={"/empresas/productos"}>
                   <li
                     onClick={closeMenu}
@@ -114,12 +120,15 @@ const Menu = () => {
           <li className="relative group m-4">
             <div
               className="cursor-pointer"
-              onClick={() => toggleMenu("Preguntas frecuentes")}
+              onMouseOver={() => toggleMenu("Preguntas frecuentes")}
             >
               Preguntas frecuentes
             </div>
             {menuOpen === "Preguntas frecuentes" && (
-              <ul className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg  text-black w-44  font-normal">
+              <ul
+                onMouseLeave={closeMenu}
+                className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg  text-black w-44  font-normal"
+              >
                 <Link href={"/preguntas/lista-de-precios"}>
                   <li
                     onClick={closeMenu}

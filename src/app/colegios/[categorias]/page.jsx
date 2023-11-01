@@ -16,7 +16,7 @@ const page = ({ params }) => {
         </div>
         <div className=" w-full  h-[calc(100%-3rem)] flex" flex>
           <div className=" w-1/6 h-full p-3">
-            <div className="w-full h-full  bg-white rounded-md flex flex-col  p-8">
+            <div className="w-full h-full  bg-gray-200 rounded-md flex flex-col  p-8">
               <h1 className="mb-10 text-xl font-bold text-zinc-700">
                 Colegios
               </h1>

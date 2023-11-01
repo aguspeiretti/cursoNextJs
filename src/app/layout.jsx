@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Head } from "next/head";
 import Nav from "@/components/Nav";
+import { CartProvider } from "@/components/context/CartContext";
 
 export const metadata = {
   title: "Akumal Uniformes",
@@ -19,10 +20,12 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body>
-        <Nav />
-        <div className="h-[calc(100vh-3.5rem)] overflow-y-auto z-0">
-          {children}
-        </div>
+        <CartProvider>
+          <Nav />
+          <div className="h-[calc(100vh-3.5rem)] overflow-y-auto z-0">
+            {children}
+          </div>
+        </CartProvider>
       </body>
     </html>
   );
