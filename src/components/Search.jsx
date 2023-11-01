@@ -1,7 +1,14 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import SideCart from "./SideCart";
 
 const Search = () => {
+  const [sideOpen, setSideOpen] = useState(false);
+
+  const handleMenuSide = () => {
+    setSideOpen(!sideOpen);
+  };
   return (
     <div className="flex ">
       <div className="relative flex items-center mr-5">
@@ -17,8 +24,9 @@ const Search = () => {
       </div>
       <div className="flex justify-center items-center mr-4 text-lg">
         <i class="fa-regular fa-heart mr-6"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+        <i onClick={handleMenuSide} class="fa-solid fa-bag-shopping cursor-pointer"></i>
       </div>
+      <SideCart handleMenu={handleMenuSide} sideOpen={sideOpen}/>
     </div>
   );
 };
