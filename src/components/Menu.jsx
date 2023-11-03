@@ -156,6 +156,30 @@ const Menu = () => {
               </ul>
             )}
           </li>
+          <li className="relative group m-4">
+            <div
+              className="cursor-pointer"
+              onMouseOver={() => toggleMenu("Contacto")}
+            >
+              Contacto
+            </div>
+
+            {menuOpen === "Contacto" && (
+              <ul
+                onMouseLeave={closeMenu}
+                className="sub-menu absolute left-0 mt-4 p-2 bg-white border rounded-lg shadow-lg text-black w-44 font-normal"
+              >
+                <Link href={"/contacto/contacto"}>
+                  <li
+                    onClick={closeMenu}
+                    className="py-1  hover:bg-gray-200 cursor-pointer "
+                  >
+                    Contacto
+                  </li>
+                </Link>
+              </ul>
+            )}
+          </li>
         </ul>
       </div>
       <div className="flex items-center ">

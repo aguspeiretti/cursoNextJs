@@ -9,7 +9,7 @@ export async function generateMetadata({ params, serchparams, parent }) {
 
 const page = ({ params }) => {
   return (
-    <div className="bg-zinc-800 w-full h-full">
+    <div className=" bg-zinc-800 w-full h-full">
       <main className="w-full h-full">
         <div className="w-full h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
           <h1>{params.categorias}</h1>
@@ -24,7 +24,7 @@ const page = ({ params }) => {
             </div>
           </div>
           <div className=" w-5/6 h-full p-3">
-            <div className="w-full h-full  bg-zinc-700 rounded-md overflow-y-scroll">
+            <div className="barra w-full h-full  bg-zinc-700 rounded-md overflow-y-scroll">
               <ProductList categoria={params.categorias} />
             </div>
           </div>
