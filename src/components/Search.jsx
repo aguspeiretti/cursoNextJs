@@ -2,9 +2,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import SideCart from "./SideCart";
+import { useAuthContext } from "./context/AuthContext";
 
 const Search = () => {
   const [sideOpen, setSideOpen] = useState(false);
+
+  const { logout, user } = useAuthContext();
+
+  console.log(user);
 
   const handleMenuSide = () => {
     setSideOpen(!sideOpen);
@@ -28,6 +33,14 @@ const Search = () => {
           onClick={handleMenuSide}
           className="fa-solid fa-bag-shopping cursor-pointer"
         ></i>
+        {user.logged ? (
+          <button
+            className="p-1 bg-red-600 text-sm font-normal rounded-lg ml-4"
+            onClick={logout}
+          >
+            Logout
+          </button>
+        ) : null}
       </div>
       <SideCart handleMenu={handleMenuSide} sideOpen={sideOpen} />
     </div>

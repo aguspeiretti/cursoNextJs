@@ -3,6 +3,7 @@ import "./globals.css";
 import { Head } from "next/head";
 import Nav from "@/components/Nav";
 import { CartProvider } from "@/components/context/CartContext";
+import { AuthProvider } from "@/components/context/AuthContext";
 
 export const metadata = {
   title: "Akumal Uniformes",
@@ -26,12 +27,14 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body className="overflow-hidden">
-        <CartProvider>
-          <Nav />
-          <div className="prueba h-[calc(100vh-3.5rem)] overflow-y-auto z-0">
-            {children}
-          </div>
-        </CartProvider>
+        <AuthProvider>
+          <CartProvider>
+            <Nav />
+            <div className="prueba h-[calc(100vh-3.5rem)] overflow-y-auto z-0">
+              {children}
+            </div>
+          </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );
