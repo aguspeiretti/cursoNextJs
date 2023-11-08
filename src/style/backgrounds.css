@@ -1,0 +1,15 @@
+.principal {
+  background-image: url("/fondo2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.todos {
+  background-image: url("/fondosinlogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.contacto {
+  background-image: url("/fondo2.jpg");
+  background-position: center;
+  background-size: cover;
+}

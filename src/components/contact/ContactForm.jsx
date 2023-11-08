@@ -24,7 +24,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <div className="w-full h-full bg-zinc-700">
+      <div className="w-full h-full ">
         <div className="w-full h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
           <h1>Dejanos tu consulta</h1>
         </div>
@@ -56,17 +56,7 @@ export const ContactForm = () => {
               Enviar
             </button>
           </form>
-          <div className="w-1/2 h-full flex justify-start items-center mt-20 flex-col ">
-            <Image
-              src={"/logoaku.png"}
-              width={400}
-              height={400}
-              alt="logoAkumal"
-            />
-            <p className="text-white mt-10 text-2xl">
-              Un asesor se contactara a la brevedad!
-            </p>
-          </div>
+          <div className="w-1/2 h-full flex justify-start items-center mt-20 flex-col "></div>
         </div>
       </div>
     </>
