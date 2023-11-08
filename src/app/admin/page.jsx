@@ -10,8 +10,8 @@ const Admin = () => {
           Panel Administrador
         </h1>
         <Link href={"/admin/create"}>
-          <button className="w-24 p-2 h-8 bg-orange-500 rounded-xl text-md  flex items-center justify-center text-white">
-            Create
+          <button className="w-24 p-2 h-8 bg-orange-500 rounded-xl text-sm  flex items-center justify-center text-white">
+            <p>Crear nuevo</p>
           </button>
         </Link>
       </div>

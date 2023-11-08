@@ -4,7 +4,7 @@ import { useCartContext } from "./context/CartContext";
 
 const SideCart = ({ handleMenu, sideOpen }) => {
   const { cart } = useCartContext();
-  console.log(cart);
+
   function sumarPreciosEnCarrito(cart) {
     let total = 0;
 
@@ -53,8 +53,10 @@ const SideCart = ({ handleMenu, sideOpen }) => {
         ))}
       </div>
       <div className="absolute bottom-5 flex justify-between items-center w-10/12 ">
-        <p >Costo Total : {precioTotal}</p>
-        <button className=" bg-orange-500 rounded-lg p-1 text-white font-normal">Ir al carrito</button>
+        <p>Costo Total : {precioTotal}</p>
+        <button className=" bg-orange-500 rounded-lg p-1 text-white font-normal">
+          Ir al carrito
+        </button>
       </div>
     </div>
   );

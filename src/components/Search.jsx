@@ -9,8 +9,6 @@ const Search = () => {
 
   const { logout, user } = useAuthContext();
 
-  console.log(user);
-
   const handleMenuSide = () => {
     setSideOpen(!sideOpen);
   };

@@ -8,7 +8,6 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { redirect } from "next/navigation";
 
 const AuthContext = createContext();
 
@@ -23,7 +22,6 @@ export const AuthProvider = ({ children }) => {
 
   const loginUser = async (values) => {
     await signInWithEmailAndPassword(auth, values.email, values.password);
-    console.log(userCredential);
   };
 
   const logout = async () => {
@@ -32,8 +30,6 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-      console.log(user);
-
       if (user) {
         setUser({ logged: true, email: user.email, user: user.uid });
       } else {

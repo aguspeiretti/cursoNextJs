@@ -32,11 +32,11 @@ export const LoginForm = () => {
 
         <div className="flex w-full justify-center items-center  ">
           <form
-            className="flex flex-col w-1/2 h-full  items-center "
+            className="flex flex-col w-1/2 h-full  items-center  "
             onSubmit={handleSubmit}
           >
             <input
-              className="w-1/2 h-10 rounded-2xl pl-8 mt-8"
+              className="w-1/2 h-10 rounded-md pl-8 mt-8"
               type="email"
               name="email"
               value={values.email}
@@ -44,7 +44,7 @@ export const LoginForm = () => {
               onChange={handleChange}
             />
             <input
-              className="w-1/2 h-10 rounded-2xl pl-8 mt-8"
+              className="w-1/2 h-10 rounded-md pl-8 mt-8"
               type="password"
               name="password"
               value={values.password}
@@ -53,14 +53,8 @@ export const LoginForm = () => {
             />
             <div className="flex w-full justify-center ">
               <button
-                onClick={() => registerUser(values)}
-                className="w-24 p-2 h-8 bg-orange-500 rounded-xl text-md mt-6 flex items-center justify-center text-white mr-10 "
-              >
-                Registrarme
-              </button>
-              <button
                 onClick={() => loginUser(values)}
-                className="w-24 p-2 h-8 bg-orange-500 rounded-xl text-md mt-6 flex items-center justify-center text-white "
+                className="w-1/2 h-10 p-2 bg-orange-500 rounded-md text-md mt-6 flex items-center justify-center text-white "
               >
                 Ingresar
               </button>
