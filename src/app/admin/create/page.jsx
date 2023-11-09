@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { doc, setDoc } from "firebase/firestore";
 import { db, storage } from "@/app/firebase/config";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import Swal from "sweetalert2";
 
 const createProduct = async (values, file) => {
   const storageRef = ref(storage, values.slug);
@@ -44,8 +45,17 @@ const Create = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     await createProduct(values, file);
+    Swal.fire({
+      toast: true,
+      icon: "success",
+      title: "Producto creado",
+      animation: false,
+      position: "top-right",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+    });
   };
 
   return (

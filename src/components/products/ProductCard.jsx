@@ -6,7 +6,7 @@ const ProductCard = ({ item }) => {
       <img className="h-1/2" src={item.image} alt="productImage" />
       <h3 className="px-6 pt-4">{item.title}</h3>
       <Link href={`/colegios/detail/${item.slug}`}>
-        <button className="w-3/3 p-2 h-8 bg-orange-500 rounded-xl text-xs mt-6">
+        <button className="w-3/3 p-2 h-8 bg-sky-900 rounded-xl text-xs mt-6 text-white">
           Ver producto
         </button>
       </Link>

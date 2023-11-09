@@ -16,14 +16,14 @@ const Counter = ({ max, quantity, setCounter }) => {
       <h4 className="mb-4">Cantidad:</h4>
       <div className="flex gap-3">
         <button
-          className=" w-8 h-8 flex justify-center items-center rounded-md bg-orange-600"
+          className=" w-8 h-8 flex justify-center items-center rounded-md bg-sky-900"
           onClick={handleCounterRest}
         >
           -
         </button>
         <p className="flex justify-center items-center">{quantity}</p>
         <button
-          className="w-8 h-8 flex justify-center items-center  rounded-md bg-orange-600"
+          className="w-8 h-8 flex justify-center items-center  rounded-md bg-sky-900"
           onClick={handleCounterplus}
         >
           +

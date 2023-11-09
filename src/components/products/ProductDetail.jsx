@@ -11,20 +11,21 @@ const ProductDetail = async ({ slug }) => {
   }).then((r) => r.json());
 
   return (
-    <div className=" w-9/12 h-5/6 text-white ">
-      <div className="w-full h-full flex flex-wrap">
-        <div className="w-1/2 h-2/3 flex justify-center items-center  ">
-          <img className="w-1/2" src={item.image} alt="foto" />
+    <div className=" w-full h-full text-white  bg-black bg-opacity-80 ">
+      <div className="w-full h-full flex flex-wrap justify-center items-center  ">
+        <div className="w-3/6 h-full  flex flex-col justify-center items-center ">
+          <div className="w-full h-full flex justify-center items-center   ">
+            <img className="h-full p-8" src={item.image} alt="foto" />
+          </div>
         </div>
-        <div className="w-1/2 h-2/3 p-8">
+        <div className="w-3/6 h-5/6 p-8  bg-black bg-opacity-90 text-white rounded-lg">
           <h1 className="font-semibold text-xl pb-8">{item.title}</h1>
+          <div className="w-full h-20  ">
+            <p className="uppercase">{item.description}</p>
+          </div>
           <h3 className="font-semibold text-xl pb-6">Precio: ${item.price}</h3>
 
           <QtySelector item={item} />
-        </div>
-        <div className="w-full h-1/3 px-8 ">
-          <h1 className="text-lg font-semibold pt-2 pb-8">Descripcion</h1>
-          <p className="uppercase">{item.description}</p>
         </div>
       </div>
     </div>

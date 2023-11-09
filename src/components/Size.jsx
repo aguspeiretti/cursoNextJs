@@ -30,7 +30,7 @@ const Size = ({ size, setSize }) => {
           <div
             onClick={() => handleSizeClick(talle)}
             className={`w-8 h-8 bg-slate-300 text-black flex mr-2 rounded-lg justify-center items-center cursor-pointer ${
-              size === talle ? "border-2  border-orange-500" : ""
+              size === talle ? "bg-sky-600" : ""
             }`}
             key={talle}
           >

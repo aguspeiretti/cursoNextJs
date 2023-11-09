@@ -50,7 +50,7 @@ export const ContactForm = () => {
               onChange={handleChange}
             />
             <button
-              className="w-24 p-2 h-8 bg-orange-500 rounded-xl text-md mt-6 flex items-center justify-center text-white "
+              className="w-24 p-2 h-8 bg-sky-900 rounded-xl text-md mt-6 flex items-center justify-center text-white "
               type="submit"
             >
               Enviar
