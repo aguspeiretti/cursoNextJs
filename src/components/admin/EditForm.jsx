@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { doc, updateDoc } from "firebase/firestore";
 import { db, storage } from "@/app/firebase/config";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import Swal from "sweetalert2";
+import BotonVolver from "../BotonVolver";
 
 const updateProduct = async (slug, values) => {
   const docRef = doc(db, "products", slug);
@@ -19,7 +19,6 @@ const updateProduct = async (slug, values) => {
 };
 
 const EditForm = ({ item }) => {
-  const { title, description, inStock, price, type, image } = item;
   const [values, setValues] = useState({
     title: "",
     type: "",
@@ -27,7 +26,17 @@ const EditForm = ({ item }) => {
     inStock: 0,
     description: "",
   });
-  const [file, setFile] = useState(null);
+
+  useEffect(() => {
+    // Al cargar el componente, establecer los valores iniciales
+    setValues({
+      title: item.title || "",
+      type: item.type || "",
+      price: item.price || 0,
+      inStock: item.inStock || 0,
+      description: item.description || "",
+    });
+  }, [item]);
 
   const handleChange = (e) => {
     setValues({
@@ -50,11 +59,15 @@ const EditForm = ({ item }) => {
       timerProgressBar: true,
     });
   };
+
   return (
     <div className="w-full h-full bg-zinc-700 overflow-hidden">
       <div className="w-full h-full bg-zinc-700">
-        <div className="w-full h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
+        <div className="w-1/2 h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
           <h1>Modificar Producto</h1>
+          <div className="absolute right-10">
+            <BotonVolver />
+          </div>
         </div>
 
         <div className="flex w-full h-full ">

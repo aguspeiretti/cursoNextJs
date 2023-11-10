@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import BotonEliminar from "../BotonEliminar";
 
 const ProductTable = async () => {
   const items = await fetch(`http://localhost:3000/api/routes.products/Todos`, {
@@ -10,6 +11,12 @@ const ProductTable = async () => {
   }).then((r) => r.json());
 
   const sortedItems = items.sort((a, b) => a.type.localeCompare(b.type));
+
+  const deleteProduct = async (slug) => {
+    const docRef = doc(db, "products", slug);
+    await deleteDoc(docRef);
+    console.log("Producto eliminado:", slug);
+  };
 
   return (
     <div className="w-full ">
@@ -48,9 +55,7 @@ const ProductTable = async () => {
                     <i className="fa-solid fa-pencil"></i>
                   </button>
                 </Link>
-                <button className=" w-8 h-8  bg-orange-500 rounded-lg text-sm   text-white  ">
-                  <i className="fa-solid fa-trash-can "></i>
-                </button>
+                <BotonEliminar slug={product.slug} />
               </td>
             </tr>
           ))}

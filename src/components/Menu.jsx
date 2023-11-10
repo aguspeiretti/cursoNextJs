@@ -8,7 +8,7 @@ const Menu = () => {
     <div className="flex">
       <div className="hidden md:block">
         <ul className="flex">
-          <Link href={"http://localhost:3000/colegios/Todos"}>
+          <Link href={"/colegios/Todos"}>
             <li className="relative group m-4">
               <div className="cursor-pointer">Colegios</div>
             </li>
@@ -16,10 +16,12 @@ const Menu = () => {
           <li className="relative group m-4">
             <div className="cursor-pointer">Empresas</div>
           </li>
-          <li className="relative group m-4">
-            <div className="cursor-pointer">Preguntas frecuentes</div>
-          </li>
-          <Link href={"http://localhost:3000/contacto/contacto"}>
+          <Link href={"/ListasDePrecio/Jockey"}>
+            <li className="relative group m-4">
+              <div className="cursor-pointer">Listas de precios</div>
+            </li>{" "}
+          </Link>
+          <Link href={"/contacto/contacto"}>
             <li className="relative group m-4">
               <div className="cursor-pointer">Contacto</div>
             </li>

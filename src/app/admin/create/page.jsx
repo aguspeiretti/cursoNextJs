@@ -4,6 +4,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { db, storage } from "@/app/firebase/config";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import Swal from "sweetalert2";
+import BotonVolver from "@/components/BotonVolver";
 
 const createProduct = async (values, file) => {
   const storageRef = ref(storage, values.slug);
@@ -59,9 +60,12 @@ const Create = () => {
   };
 
   return (
-    <div className="w-full h-full bg-zinc-700 overflow-hidden">
+    <div className="w-full h-full bg-zinc-700">
       <div className="w-full h-full bg-zinc-700">
-        <div className="w-full h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
+        <div className="w-1/2 h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
+          <div className="absolute right-10">
+            <BotonVolver />
+          </div>
           <h1>Crear Producto</h1>
         </div>
 

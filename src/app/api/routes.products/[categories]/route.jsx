@@ -4,11 +4,10 @@ import { db } from "@/app/firebase/config";
 
 export async function GET(request, { params }) {
   const { categories } = params;
-  console.log("este est tu param", categories);
+
   const productsRef = collection(db, "products");
 
   console.log("essteeeeeeeeee es tu :", productsRef.type);
-
   const q =
     categories === "Todos"
       ? productsRef
