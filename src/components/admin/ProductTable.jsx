@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ProductTable = async () => {
@@ -11,7 +12,7 @@ const ProductTable = async () => {
   const sortedItems = items.sort((a, b) => a.type.localeCompare(b.type));
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <h1 className="w-full h-12 flex justify-start pl-10 items-center text-lg text-zinc-700 uppercase font-extrabold italic">
         Listado de productos
       </h1>
@@ -24,7 +25,7 @@ const ProductTable = async () => {
             <th className="px-4 py-2 text-left">Precio</th>
             <th className="px-4 py-2 text-left">En Stock</th>
             <th className="px-4 py-2 text-left">Imagen</th>
-            <th className="px-4 py-2 text-left">Panel</th>
+            <th className="px-4 py-2 ">Panel</th>
           </tr>
         </thead>
         <tbody>
@@ -41,11 +42,13 @@ const ProductTable = async () => {
               <td className="px-4 py-2">
                 <img width={50} src={product.image} alt="" />
               </td>
-              <td className="flex h-10 justify-around items-center">
-                <button className="w-2/6 h-3/4 text-center bg-orange-500 rounded-lg  text-white text-sm  ">
-                  <i className="fa-solid fa-pencil"></i>
-                </button>
-                <button className=" w-2/6 h-3/4 bg-orange-500 rounded-lg text-sm   text-white  ">
+              <td className="flex h-20 justify-around items-center ">
+                <Link href={`/admin/edit/${product.slug}`}>
+                  <button className="w-8 h-8 text-center bg-orange-500 rounded-lg  text-white text-sm  ">
+                    <i className="fa-solid fa-pencil"></i>
+                  </button>
+                </Link>
+                <button className=" w-8 h-8  bg-orange-500 rounded-lg text-sm   text-white  ">
                   <i className="fa-solid fa-trash-can "></i>
                 </button>
               </td>

@@ -29,7 +29,7 @@ const Size = ({ size, setSize }) => {
         {talles.map((talle) => (
           <div
             onClick={() => handleSizeClick(talle)}
-            className={`w-8 h-8 bg-slate-300 text-black flex mr-2 rounded-lg justify-center items-center cursor-pointer ${
+            className={`w-8 h-8 bg-gray-200 text-black flex mr-2 rounded-lg justify-center items-center cursor-pointer ${
               size === talle ? "bg-sky-600" : ""
             }`}
             key={talle}

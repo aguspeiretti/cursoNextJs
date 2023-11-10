@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useContext, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const CartContext = createContext();
 
@@ -34,8 +35,18 @@ export const CartProvider = ({ children }) => {
       return updatedCart;
     });
   };
+
+  const calculateTotalCost = () => {
+    return cart.reduce((total, product) => {
+      const productPrice = product.price || 0;
+      return total + productPrice * product.qty;
+    }, 0);
+  };
+
   return (
-    <CartContext.Provider value={{ addToCart, cart, removeProduct }}>
+    <CartContext.Provider
+      value={{ addToCart, cart, removeProduct, calculateTotalCost }}
+    >
       {children}
     </CartContext.Provider>
   );

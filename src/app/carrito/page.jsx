@@ -3,9 +3,10 @@ import React from "react";
 import "../../style/backgrounds.css";
 import { useCartContext } from "@/components/context/CartContext";
 import Swal from "sweetalert2";
+import Link from "next/link";
 
 const Carrito = () => {
-  const { cart, removeProduct } = useCartContext();
+  const { cart, removeProduct, calculateTotalCost } = useCartContext();
 
   const eliminarProducto = (item) => {
     removeProduct(item.slug, item.size);
@@ -23,12 +24,12 @@ const Carrito = () => {
   };
 
   return (
-    <div className="carrito w-full h-full overflow-hidden">
-      <div className="w-full text-3xl text-white p-8 flex flex-col ">
+    <div className="carrito w-full h-full overflow-hidden ">
+      <div className="w-full text-3xl text-white p-8 ">
         <h1>Carrito de compras</h1>
       </div>
-      <div className="w-full h-full  flex justify-center text-white">
-        <div className="w-full h-2/3 overflow-y-scroll barra   ">
+      <div className="w-full h-full  flex  text-white  flex-col  ">
+        <div className="w-full h-2/3 overflow-y-scroll barra  ">
           <table className="w-full">
             <thead className="bg-black bg-opacity-50 ">
               <tr>
@@ -56,7 +57,9 @@ const Carrito = () => {
                   <td className="px-4 py-2 text-center">{product.size}</td>
                   <td className="px-4 py-2 text-center ">{product.price}</td>
                   <td className="px-4 py-2 text-center">{product.qty}</td>
-                  <td className="px-4 py-2 text-center">{product.price}</td>
+                  <td className="px-4 py-2 text-center">
+                    {product.price * product.qty}
+                  </td>
                   <td className="flex h-10 justify-around items-center">
                     <button
                       onClick={() => {
@@ -71,6 +74,22 @@ const Carrito = () => {
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="flex justify-around mt-2">
+          <Link href={"/colegios/Todos"}>
+            <button className="bg-fuchsia-500 p-2 rounded-lg">
+              Seguir comprando
+            </button>
+          </Link>
+          <div className="flex justify-center items-center ">
+            <button className="bg-green-700 p-2 rounded-lg">
+              Finalizar compra
+            </button>
+            <div className="flex ml-4 bg-white text-black p-4 rounded-xl">
+              <p className="mr-2">Total: </p>
+              <div className="font-bold"> ${calculateTotalCost()}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
