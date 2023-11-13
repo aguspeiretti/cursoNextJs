@@ -1,6 +1,5 @@
 "use client";
 import { createContext, useContext, useState } from "react";
-import { useRouter } from "next/navigation";
 
 const CartContext = createContext();
 

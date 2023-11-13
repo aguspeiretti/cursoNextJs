@@ -4,7 +4,7 @@ import "../../../style/backgrounds.css";
 
 const Contacto = () => {
   return (
-    <div className="w-full h-full contacto">
+    <div className="w-full h-full contacto overflow-hidden">
       <ContactForm />
     </div>
   );

@@ -12,12 +12,6 @@ const ProductTable = async () => {
 
   const sortedItems = items.sort((a, b) => a.type.localeCompare(b.type));
 
-  const deleteProduct = async (slug) => {
-    const docRef = doc(db, "products", slug);
-    await deleteDoc(docRef);
-    console.log("Producto eliminado:", slug);
-  };
-
   return (
     <div className="w-full ">
       <h1 className="w-full h-12 flex justify-start pl-10 items-center text-lg text-zinc-700 uppercase font-extrabold italic">

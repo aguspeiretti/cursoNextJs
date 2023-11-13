@@ -7,7 +7,6 @@ export async function GET(request, { params }) {
 
   const productsRef = collection(db, "products");
 
-  console.log("essteeeeeeeeee es tu :", productsRef.type);
   const q =
     categories === "Todos"
       ? productsRef

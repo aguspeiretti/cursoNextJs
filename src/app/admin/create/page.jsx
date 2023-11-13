@@ -60,7 +60,7 @@ const Create = () => {
   };
 
   return (
-    <div className="w-full h-full bg-zinc-700">
+    <div className="w-full h-full bg-zinc-700 overflow-hidden">
       <div className="w-full h-full bg-zinc-700">
         <div className="w-1/2 h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
           <div className="absolute right-10">

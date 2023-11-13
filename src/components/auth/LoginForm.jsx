@@ -43,6 +43,7 @@ export const LoginForm = () => {
               placeholder="Email"
               onChange={handleChange}
             />
+
             <input
               className="w-1/2 h-10 rounded-md pl-8 mt-8"
               type="password"
