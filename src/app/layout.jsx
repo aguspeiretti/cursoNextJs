@@ -18,12 +18,12 @@ export default function RootLayout({ children }) {
         <script
           async
           src="https://kit.fontawesome.com/8bac4a8dea.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <script
           defer
           src="https://kit.fontawesome.com/8bac4a8dea.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </head>
       <body className="overflow-hidden">
