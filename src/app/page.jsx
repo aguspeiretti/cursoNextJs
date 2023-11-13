@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "../style/backgrounds.css";
 
 export default function Home() {

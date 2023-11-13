@@ -15,13 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
+
         <script
-          async
-          src="https://kit.fontawesome.com/8bac4a8dea.js"
-          crossOrigin="anonymous"
-        ></script>
-        <script
-          defer
           src="https://kit.fontawesome.com/8bac4a8dea.js"
           crossOrigin="anonymous"
         ></script>

@@ -11,9 +11,10 @@ const Nav = () => {
         <Link href={"/"}>
           <Image
             src={"/logosoloblanco.png"}
-            width={40}
-            height={40}
+            width={30}
+            height={30}
             alt="logo"
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
       </div>

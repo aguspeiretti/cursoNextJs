@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React, { useState } from "react";
 import SideCart from "./SideCart";
 import { useAuthContext } from "./context/AuthContext";

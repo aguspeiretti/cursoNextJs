@@ -82,9 +82,12 @@ const Carrito = () => {
             </button>
           </Link>
           <div className="flex justify-center items-center ">
-            <button className="bg-green-700 p-2 rounded-lg">
-              Finalizar compra
-            </button>
+            <Link href={"/carrito/finalizarCompra"}>
+              {" "}
+              <button className="bg-green-700 p-2 rounded-lg">
+                Finalizar compra
+              </button>
+            </Link>
             <div className="flex ml-4 bg-white text-black p-4 rounded-xl">
               <p className="mr-2">Total: </p>
               <div className="font-bold"> ${calculateTotalCost()}</div>

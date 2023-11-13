@@ -16,7 +16,14 @@ const ProductDetail = async ({ slug }) => {
       <div className="w-full h-full flex flex-wrap justify-center items-center  ">
         <div className="w-3/6 h-full  flex flex-col justify-center items-center ">
           <div className="w-full h-full flex justify-center items-center   ">
-            <Image src={item.image} width={400} height={300} loading="lazy"  alt="foto" />
+            <Image
+              src={item.image}
+              width={400}
+              height={300}
+              alt={item.title}
+              style={{ width: "auto", height: "auto" }}
+              priority={true}
+            />
           </div>
         </div>
         <div className="w-3/6 h-5/6 p-8  bg-black bg-opacity-90 text-white rounded-lg">

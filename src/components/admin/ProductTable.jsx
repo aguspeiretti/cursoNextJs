@@ -41,7 +41,7 @@ const ProductTable = async () => {
               <td className="px-4 py-2 text-center">{product.price}</td>
               <td className="px-4 py-2 text-center">{product.inStock}</td>
               <td className="px-4 py-2">
-                <img width={50} src={product.image} alt="" />
+                <img width={50} src={product.image} alt={product.title} />
               </td>
               <td className="flex h-20 justify-around items-center ">
                 <Link href={`/admin/edit/${product.slug}`}>

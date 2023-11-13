@@ -15,7 +15,7 @@ const page = ({ params }) => {
         <div className="w-full h-12 flex justify-center items-center text-2xl text-white uppercase font-extrabold italic">
           <h1>{params.categorias}</h1>
         </div>
-        <div className=" w-full  h-[calc(100%-3rem)] flex" flex>
+        <div className=" w-full  h-[calc(100%-3rem)] flex">
           <div className=" w-1/6 h-full p-3">
             <div className="w-full h-full  bg-gray-200 rounded-md flex flex-col  p-8">
               <h1 className="mb-10 text-xl font-bold text-zinc-700">
