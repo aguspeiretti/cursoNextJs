@@ -4,6 +4,8 @@ import "../../style/backgrounds.css";
 import { useCartContext } from "@/components/context/CartContext";
 import Swal from "sweetalert2";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const Carrito = () => {
   const { cart, removeProduct, calculateTotalCost } = useCartContext();
@@ -67,7 +69,7 @@ const Carrito = () => {
                       }}
                       className=" w-2/6 h-3/4 bg-sky-900 rounded-lg text-sm   text-white  "
                     >
-                      <i className="fa-solid fa-trash-can "></i>
+                      <FontAwesomeIcon icon={faTrashCan} />
                     </button>
                   </td>
                 </tr>

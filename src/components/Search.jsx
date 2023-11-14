@@ -3,6 +3,9 @@
 import React, { useState } from "react";
 import SideCart from "./SideCart";
 import { useAuthContext } from "./context/AuthContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const Search = () => {
   const [sideOpen, setSideOpen] = useState(false);
@@ -26,11 +29,15 @@ const Search = () => {
         ></i>
       </div>
       <div className="flex justify-center items-center mr-4 text-lg">
-        <i className="fa-regular fa-heart mr-6"></i>
-        <i
+        <FontAwesomeIcon
+          icon={faHeart}
+          style={{ padding: "10px", cursor: "pointer" }}
+        />
+        <FontAwesomeIcon
           onClick={handleMenuSide}
-          className="fa-solid fa-bag-shopping cursor-pointer"
-        ></i>
+          icon={faBagShopping}
+          style={{ padding: "10px", cursor: "pointer" }}
+        />
         {user.logged ? (
           <button
             className="p-1 bg-red-600 text-sm font-normal rounded-lg ml-4"

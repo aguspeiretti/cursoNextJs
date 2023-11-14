@@ -5,18 +5,12 @@ const CartContext = createContext();
 
 export const useCartContext = () => useContext(CartContext);
 
+const storedCart = JSON.parse(localStorage.getItem("cart")) ?? [];
+
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(storedCart);
 
   useEffect(() => {
-    // Recuperar el carrito desde el localStorage al cargar la página
-    const storedCart = JSON.parse(localStorage.getItem("cart")) ?? [];
-
-    setCart(storedCart);
-  }, []);
-
-  useEffect(() => {
-    // Guardar el carrito en el localStorage cada vez que cambie
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 

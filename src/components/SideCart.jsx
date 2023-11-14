@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useCartContext } from "./context/CartContext";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const SideCart = ({ handleMenu, sideOpen }) => {
   const { cart, removeProduct } = useCartContext();
@@ -69,7 +71,7 @@ const SideCart = ({ handleMenu, sideOpen }) => {
                 onClick={() => eliminarProducto(item)}
                 className=" w-4/6 bg-sky-900 rounded-lg p-1 mt-4 ml-2 text-white"
               >
-                <i className="fa-solid fa-trash-can "></i>
+                <FontAwesomeIcon icon={faTrashCan} />
               </button>
             </div>
           </div>

@@ -15,11 +15,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-
-        <script
-          src="https://kit.fontawesome.com/8bac4a8dea.js"
-          crossOrigin="anonymous"
-        ></script>
       </head>
       <body className="overflow-hidden">
         <AuthProvider>
