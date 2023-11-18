@@ -4,6 +4,8 @@ import "../../../style/backgrounds.css";
 import Link from "next/link";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const FinalizarCompra = () => {
   const { cart, calculateTotalCost } = useCartContext();
@@ -178,7 +180,7 @@ const FinalizarCompra = () => {
           onClick={handleSubmit}
           className="bg-lime-600 p-2 text-white rounded-lg mt-2"
         >
-          Enviar por <i class="fa-brands fa-whatsapp"></i>{" "}
+          Enviar pedido por <FontAwesomeIcon icon={faWhatsapp} />{" "}
         </button>
       </div>
     </div>
