@@ -5,19 +5,8 @@ const CartContext = createContext();
 
 export const useCartContext = () => useContext(CartContext);
 
-const storedCart =
-  typeof window !== "undefined"
-    ? JSON.parse(localStorage.getItem("cart")) ?? []
-    : [];
-
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState(storedCart);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    }
-  }, [cart]);
+  const [cart, setCart] = useState();
 
   const addToCart = (item) => {
     const existingProduct = cart.find(
