@@ -1,4 +1,4 @@
-import EditForm from "@/components/admin/editForm";
+import EditForm from "@/components/admin/EditForm";
 import React from "react";
 
 const EditPage = async ({ params }) => {
