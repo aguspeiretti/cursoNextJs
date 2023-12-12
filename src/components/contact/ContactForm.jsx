@@ -16,7 +16,7 @@ export const ContactForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    await fetch("http://localhost:3000/api/routes.contact/", {
+    await fetch(`http://${process.env.VERCEL_URL}/api/routes.contact/`, {
       method: "POST",
       body: JSON.stringify(values),
     });

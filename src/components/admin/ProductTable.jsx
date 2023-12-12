@@ -5,12 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
 const ProductTable = async () => {
-  const items = await fetch(`http://localhost:3000/api/routes.products/Todos`, {
-    cache: "no-store",
-    next: {
-      tags: ["products"],
-    },
-  }).then((r) => r.json());
+  const items = await fetch(
+    `http://${process.env.VERCEL_URL}/api/routes.products/Todos`,
+    {
+      cache: "no-store",
+      next: {
+        tags: ["products"],
+      },
+    }
+  ).then((r) => r.json());
 
   const sortedItems = items.sort((a, b) => a.type.localeCompare(b.type));
 
