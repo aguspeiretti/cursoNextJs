@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 const ProductList = async ({ categoria }) => {
   const items = await fetch(
-    `http://${process.env.VERCEL_URL}/api/routes.products/${categoria}`,
+    `http://localhost:3000/api/routes.products/${categoria}`,
     {
       cache: "no-store",
       next: {

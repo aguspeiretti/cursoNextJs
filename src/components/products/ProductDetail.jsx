@@ -4,15 +4,12 @@ import QtySelector from "./QtySelector";
 import Image from "next/image";
 
 const ProductDetail = async ({ slug }) => {
-  const item = await fetch(
-    `${process.env.VERCEL_URL}/api/routes.product/${slug}`,
-    {
-      cache: "no-store",
-      next: {
-        revalidate: 0,
-      },
-    }
-  ).then((r) => r.json());
+  const item = await fetch(`http://localhost:3000/api/routes.product/${slug}`, {
+    cache: "no-store",
+    next: {
+      revalidate: 0,
+    },
+  }).then((r) => r.json());
 
   return (
     <div className=" w-full h-full text-white  bg-black bg-opacity-80 ">
@@ -21,8 +18,8 @@ const ProductDetail = async ({ slug }) => {
           <div className="w-full h-full flex justify-center items-center   ">
             <Image
               src={item.image}
-              width={400}
-              height={300}
+              width={300}
+              height={200}
               alt={item.title}
               style={{ width: "auto", height: "auto" }}
               priority={true}
