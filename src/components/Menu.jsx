@@ -13,9 +13,9 @@ const Menu = () => {
               <div className="cursor-pointer">Colegios</div>
             </li>
           </Link>
-          <li className="relative group m-4">
+          {/* <li className="relative group m-4">
             <div className="cursor-pointer">Empresas</div>
-          </li>
+          </li> */}
           <Link href={"/ListasDePrecio/Jockey"}>
             <li className="relative group m-4">
               <div className="cursor-pointer">Listas de precios</div>

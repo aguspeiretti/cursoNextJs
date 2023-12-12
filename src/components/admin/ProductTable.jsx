@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import BotonEliminar from "../BotonEliminar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
 const ProductTable = async () => {
   const items = await fetch(`http://localhost:3000/api/routes.products/Todos`, {
@@ -46,7 +48,7 @@ const ProductTable = async () => {
               <td className="flex h-20 justify-around items-center ">
                 <Link href={`/admin/edit/${product.slug}`}>
                   <button className="w-8 h-8 text-center bg-orange-500 rounded-lg  text-white text-sm  ">
-                    <i className="fa-solid fa-pencil"></i>
+                    <FontAwesomeIcon icon={faPencil} />
                   </button>
                 </Link>
                 <BotonEliminar slug={product.slug} />

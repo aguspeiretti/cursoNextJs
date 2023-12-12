@@ -3,6 +3,8 @@ import React from "react";
 import { doc, deleteDoc } from "firebase/firestore";
 import { db } from "@/app/firebase/config";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const deleteProduct = async ({ slug }) => {
   const result = await Swal.fire({
@@ -32,7 +34,7 @@ const BotonEliminar = (slug) => {
       onClick={() => deleteProduct(slug)}
       className=" w-8 h-8  bg-orange-500 rounded-lg text-sm   text-white  "
     >
-      <i className="fa-solid fa-trash-can "></i>
+      <FontAwesomeIcon icon={faTrashCan} />
     </button>
   );
 };
