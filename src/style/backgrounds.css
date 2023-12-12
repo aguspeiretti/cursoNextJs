@@ -1,0 +1,36 @@
+.principal {
+  background-image: url("/fondoescrito.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.todos {
+  background-image: url("/fondosinlogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.contacto {
+  background-image: url("/fondo2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.detail {
+  background-image: url("/fondosinlogo.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(1000px);
+}
+.carrito {
+  background-image: url("/fondocarrito.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.preguntas {
+  background-image: url("/fondocarrito.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.finalizar {
+  background-image: url("/fondocarrito.jpg");
+  background-position: center;
+  background-size: cover;
+}
