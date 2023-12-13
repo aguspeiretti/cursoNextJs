@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 const getProducts = async()=>{
   const items = await fetch(
-    `http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.products/${categoria}`,
+    `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.products/${categoria}`,
     {
       cache: "no-store",
       next: {
@@ -21,7 +21,7 @@ const items = await getProducts()
 
   return (
     <div className="w-full h-full flex flex-wrap justify-center pt-4 ">
-      {items.map((item) => (
+      {items?.map((item) => (
         <ProductCard key={item.slug} item={item} />
       ))}{" "}
     </div>
