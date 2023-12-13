@@ -11,11 +11,7 @@ const EditPage = async ({ params }) => {
     },
   }).then((r) => r.json());
 
-  return (
-    <div className="w-full h-full">
-      <EditForm item={item} />
-    </div>
-  );
+  return <div className="w-full h-full">{/* <EditForm item={item} /> */}</div>;
 };
 
 export default EditPage;
