@@ -8,7 +8,7 @@ export async function generateMetadata({ params, serchparams, parent }) {
   };
 }
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   return (
     <div className=" todos bg-zinc-800 w-full h-full">
       <main className="w-full h-full">
@@ -26,7 +26,7 @@ const page = ({ params }) => {
           </div>
           <div className=" w-5/6 h-full p-3">
             <div className="barra w-full h-full  bg-zinc-700  bg-opacity-70 rounded-md overflow-y-scroll">
-              <ProductList categoria={params.categorias} />
+              {/* <ProductList categoria={params.categorias} /> */}
             </div>
           </div>
         </div>
@@ -35,4 +35,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;
