@@ -5,7 +5,7 @@ const EditPage = async ({ params }) => {
   const { slug } = params;
 
   const item = await fetch(
-    `http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.product/${slug}`,
+    `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.products/${slug}`,
     {
       cache: "no-store",
       next: {
