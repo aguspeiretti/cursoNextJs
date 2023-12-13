@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ProductDetail = async ({ slug }) => {
   const item = await fetch(
-    `http:/${process.env.VERCEL_URL}/api/routes.product/${slug}`,
+    `http:/${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.product/${slug}`,
     {
       cache: "no-store",
       next: {
