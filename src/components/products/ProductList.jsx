@@ -1,6 +1,7 @@
 import ProductCard from "./ProductCard";
 
-const ProductList = async ({ categoria }) => {
+
+const getProducts = async()=>{
   const items = await fetch(
     `http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.products/${categoria}`,
     {
@@ -9,7 +10,14 @@ const ProductList = async ({ categoria }) => {
         tags: ["products"],
       },
     }
-  ).then((r) => r.json());
+  );
+  return await items.json();
+}
+
+
+const ProductList = async ({ categoria }) => {
+
+const items = await getProducts()
 
   return (
     <div className="w-full h-full flex flex-wrap justify-center pt-4 ">
