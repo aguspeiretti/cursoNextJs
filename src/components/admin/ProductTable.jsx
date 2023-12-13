@@ -12,7 +12,7 @@ const ProductTable = () => {
 
   // Usamos useEffect para hacer el fetch cuando el componente se monta
   useEffect(() => {
-    fetch(`http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.products/Todos`, {
+    fetch(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/routes.products/Todos`, {
       cache: "no-store",
       next: {
         tags: ["products"],
@@ -82,4 +82,3 @@ const ProductTable = () => {
   );
 };
 
-export default ProductTable;
