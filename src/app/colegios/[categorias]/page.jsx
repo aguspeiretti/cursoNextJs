@@ -26,7 +26,7 @@ const Page = ({ params }) => {
           </div>
           <div className=" w-5/6 h-full p-3">
             <div className="barra w-full h-full  bg-zinc-700  bg-opacity-70 rounded-md overflow-y-scroll">
-              {/* <ProductList categoria={params.categorias} /> */}
+              <ProductList categoria={params.categorias} />
             </div>
           </div>
         </div>
