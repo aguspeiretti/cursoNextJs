@@ -1,4 +1,6 @@
+import RediPanel from "@/components/RediPanel";
 import ProductTable from "@/components/admin/ProductTable";
+
 import Link from "next/link";
 import React from "react";
 

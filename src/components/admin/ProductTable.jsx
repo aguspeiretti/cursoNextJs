@@ -1,17 +1,38 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import BotonEliminar from "../BotonEliminar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
-const ProductTable = async () => {
-  const items = await fetch(`http://localhost:3000/api/routes.products/Todos`, {
-    cache: "no-store",
-    next: {
-      tags: ["products"],
-    },
-  }).then((r) => r.json());
+const ProductTable = () => {
+  // Creamos un estado para guardar los items y otro para indicar si están cargados
+  const [items, setItems] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
+  // Usamos useEffect para hacer el fetch cuando el componente se monta
+  useEffect(() => {
+    fetch(`http://${process.env.VERCEL_URL}/api/routes.products/Todos`, {
+      cache: "no-store",
+      next: {
+        tags: ["products"],
+      },
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        // Actualizamos el estado con los datos y cambiamos isLoaded a true
+        setItems(data);
+        setIsLoaded(true);
+      });
+  }, []);
+
+  // Si los datos no están cargados, podemos devolver null o algún componente de carga
+  if (!isLoaded) {
+    return null;
+    // o return <Loading />;
+  }
+
+  // Si los datos están cargados, podemos ordenarlos y renderizar el componente normalmente
   const sortedItems = items.sort((a, b) => a.type.localeCompare(b.type));
 
   return (

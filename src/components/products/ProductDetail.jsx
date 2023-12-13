@@ -4,12 +4,15 @@ import QtySelector from "./QtySelector";
 import Image from "next/image";
 
 const ProductDetail = async ({ slug }) => {
-  const item = await fetch(`http://localhost:3000/api/routes.product/${slug}`, {
-    cache: "no-store",
-    next: {
-      revalidate: 0,
-    },
-  }).then((r) => r.json());
+  const item = await fetch(
+    `http:/${process.env.VERCEL_URL}/api/routes.product/${slug}`,
+    {
+      cache: "no-store",
+      next: {
+        revalidate: 0,
+      },
+    }
+  ).then((r) => r.json());
 
   return (
     <div className=" w-full h-full text-white  bg-black bg-opacity-80 ">

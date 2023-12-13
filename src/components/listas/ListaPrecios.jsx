@@ -2,7 +2,7 @@ import React from "react";
 
 const ListaPrecios = async ({ categoria }) => {
   const items = await fetch(
-    `http://localhost:3000/api/routes.products/${categoria}`,
+    `http://${process.env.VERCEL_URL}/api/routes.products/${categoria}`,
     {
       cache: "no-store",
       next: {
