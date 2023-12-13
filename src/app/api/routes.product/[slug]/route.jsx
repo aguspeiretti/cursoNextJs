@@ -9,5 +9,5 @@ export async function GET(request, { params }) {
 
   const docSnapshot = await getDoc(docRef);
 
-  return NextResponse.json(docSnapshot.data());
+  return NextResponse.json([]);
 }
